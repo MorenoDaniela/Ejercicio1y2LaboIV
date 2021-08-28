@@ -1,0 +1,23 @@
+<h1>Hola mundo Angular!</h1>
+{{title}}
+<br>
+{{miUsuario.nombre}}
+<br>
+<button value='saludar' (click)='saludar()'>Soy el boton que saluda</button>
+<br>
+<input type='text' [(ngModel)]="title">
+<br>
+<input type='text' [(ngModel)]='miUsuario.nombre'>
+
+<input type='number' [(ngModel)]='edadUno' placeholder="Ingrese la edad uno">
+<br>
+<input type='number' [(ngModel)]='edadDos' placeholder="Ingrese la edad dos">
+<br>
+<input type='number' [(ngModel)]='suma' readonly>
+<br>
+<input type='number'  [(ngModel)]='promedio' readonly>
+<br>
+<input type='button' (click)='calcular()' value='Calcular'>
+<br>
+<input type='button' (click)='limpiar()'value='Limpiar'>
+<br>
